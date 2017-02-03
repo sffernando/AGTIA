@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED14450E1E4450FC001D19AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED14450D1E4450FC001D19AD /* main.m */; };
+		ED1445111E4450FC001D19AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1445101E4450FC001D19AD /* AppDelegate.m */; };
+		ED1445141E4450FC001D19AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1445131E4450FC001D19AD /* ViewController.m */; };
+		ED1445171E4450FC001D19AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1445151E4450FC001D19AD /* Main.storyboard */; };
+		ED1445191E4450FC001D19AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1445181E4450FC001D19AD /* Assets.xcassets */; };
+		ED14451C1E4450FC001D19AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED14451A1E4450FC001D19AD /* LaunchScreen.storyboard */; };
+		ED1445271E4450FC001D19AD /* AGTIACircleViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1445261E4450FC001D19AD /* AGTIACircleViewTests.m */; };
+		ED1445321E4450FC001D19AD /* AGTIACircleViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1445311E4450FC001D19AD /* AGTIACircleViewUITests.m */; };
+		ED1445421E4451B9001D19AD /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1445411E4451B9001D19AD /* CircleLayer.m */; };
+		ED1445451E4482D8001D19AD /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1445441E4482D8001D19AD /* CircleView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED1445231E4450FC001D19AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED1445011E4450FC001D19AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED1445081E4450FC001D19AD;
+			remoteInfo = AGTIACircleView;
+		};
+		ED14452E1E4450FC001D19AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED1445011E4450FC001D19AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED1445081E4450FC001D19AD;
+			remoteInfo = AGTIACircleView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED1445091E4450FC001D19AD /* AGTIACircleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGTIACircleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED14450D1E4450FC001D19AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED14450F1E4450FC001D19AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED1445101E4450FC001D19AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED1445121E4450FC001D19AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ED1445131E4450FC001D19AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ED1445161E4450FC001D19AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED1445181E4450FC001D19AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED14451B1E4450FC001D19AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED14451D1E4450FC001D19AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1445221E4450FC001D19AD /* AGTIACircleViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGTIACircleViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1445261E4450FC001D19AD /* AGTIACircleViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGTIACircleViewTests.m; sourceTree = "<group>"; };
+		ED1445281E4450FC001D19AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED14452D1E4450FC001D19AD /* AGTIACircleViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGTIACircleViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1445311E4450FC001D19AD /* AGTIACircleViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGTIACircleViewUITests.m; sourceTree = "<group>"; };
+		ED1445331E4450FC001D19AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1445401E4451B9001D19AD /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayer.h; sourceTree = "<group>"; };
+		ED1445411E4451B9001D19AD /* CircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayer.m; sourceTree = "<group>"; };
+		ED1445431E4482D8001D19AD /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		ED1445441E4482D8001D19AD /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED1445061E4450FC001D19AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED14451F1E4450FC001D19AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED14452A1E4450FC001D19AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED1445001E4450FC001D19AD = {
+			isa = PBXGroup;
+			children = (
+				ED14450B1E4450FC001D19AD /* AGTIACircleView */,
+				ED1445251E4450FC001D19AD /* AGTIACircleViewTests */,
+				ED1445301E4450FC001D19AD /* AGTIACircleViewUITests */,
+				ED14450A1E4450FC001D19AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED14450A1E4450FC001D19AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED1445091E4450FC001D19AD /* AGTIACircleView.app */,
+				ED1445221E4450FC001D19AD /* AGTIACircleViewTests.xctest */,
+				ED14452D1E4450FC001D19AD /* AGTIACircleViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED14450B1E4450FC001D19AD /* AGTIACircleView */ = {
+			isa = PBXGroup;
+			children = (
+				ED14453F1E445195001D19AD /* CircleView */,
+				ED14450F1E4450FC001D19AD /* AppDelegate.h */,
+				ED1445101E4450FC001D19AD /* AppDelegate.m */,
+				ED1445121E4450FC001D19AD /* ViewController.h */,
+				ED1445131E4450FC001D19AD /* ViewController.m */,
+				ED1445151E4450FC001D19AD /* Main.storyboard */,
+				ED1445181E4450FC001D19AD /* Assets.xcassets */,
+				ED14451A1E4450FC001D19AD /* LaunchScreen.storyboard */,
+				ED14451D1E4450FC001D19AD /* Info.plist */,
+				ED14450C1E4450FC001D19AD /* Supporting Files */,
+			);
+			path = AGTIACircleView;
+			sourceTree = "<group>";
+		};
+		ED14450C1E4450FC001D19AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED14450D1E4450FC001D19AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED1445251E4450FC001D19AD /* AGTIACircleViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED1445261E4450FC001D19AD /* AGTIACircleViewTests.m */,
+				ED1445281E4450FC001D19AD /* Info.plist */,
+			);
+			path = AGTIACircleViewTests;
+			sourceTree = "<group>";
+		};
+		ED1445301E4450FC001D19AD /* AGTIACircleViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED1445311E4450FC001D19AD /* AGTIACircleViewUITests.m */,
+				ED1445331E4450FC001D19AD /* Info.plist */,
+			);
+			path = AGTIACircleViewUITests;
+			sourceTree = "<group>";
+		};
+		ED14453F1E445195001D19AD /* CircleView */ = {
+			isa = PBXGroup;
+			children = (
+				ED1445401E4451B9001D19AD /* CircleLayer.h */,
+				ED1445411E4451B9001D19AD /* CircleLayer.m */,
+				ED1445431E4482D8001D19AD /* CircleView.h */,
+				ED1445441E4482D8001D19AD /* CircleView.m */,
+			);
+			path = CircleView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED1445081E4450FC001D19AD /* AGTIACircleView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED1445361E4450FC001D19AD /* Build configuration list for PBXNativeTarget "AGTIACircleView" */;
+			buildPhases = (
+				ED1445051E4450FC001D19AD /* Sources */,
+				ED1445061E4450FC001D19AD /* Frameworks */,
+				ED1445071E4450FC001D19AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AGTIACircleView;
+			productName = AGTIACircleView;
+			productReference = ED1445091E4450FC001D19AD /* AGTIACircleView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED1445211E4450FC001D19AD /* AGTIACircleViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED1445391E4450FC001D19AD /* Build configuration list for PBXNativeTarget "AGTIACircleViewTests" */;
+			buildPhases = (
+				ED14451E1E4450FC001D19AD /* Sources */,
+				ED14451F1E4450FC001D19AD /* Frameworks */,
+				ED1445201E4450FC001D19AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED1445241E4450FC001D19AD /* PBXTargetDependency */,
+			);
+			name = AGTIACircleViewTests;
+			productName = AGTIACircleViewTests;
+			productReference = ED1445221E4450FC001D19AD /* AGTIACircleViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED14452C1E4450FC001D19AD /* AGTIACircleViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED14453C1E4450FC001D19AD /* Build configuration list for PBXNativeTarget "AGTIACircleViewUITests" */;
+			buildPhases = (
+				ED1445291E4450FC001D19AD /* Sources */,
+				ED14452A1E4450FC001D19AD /* Frameworks */,
+				ED14452B1E4450FC001D19AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED14452F1E4450FC001D19AD /* PBXTargetDependency */,
+			);
+			name = AGTIACircleViewUITests;
+			productName = AGTIACircleViewUITests;
+			productReference = ED14452D1E4450FC001D19AD /* AGTIACircleViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED1445011E4450FC001D19AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = fernando;
+				TargetAttributes = {
+					ED1445081E4450FC001D19AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					ED1445211E4450FC001D19AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED1445081E4450FC001D19AD;
+					};
+					ED14452C1E4450FC001D19AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED1445081E4450FC001D19AD;
+					};
+				};
+			};
+			buildConfigurationList = ED1445041E4450FC001D19AD /* Build configuration list for PBXProject "AGTIACircleView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED1445001E4450FC001D19AD;
+			productRefGroup = ED14450A1E4450FC001D19AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED1445081E4450FC001D19AD /* AGTIACircleView */,
+				ED1445211E4450FC001D19AD /* AGTIACircleViewTests */,
+				ED14452C1E4450FC001D19AD /* AGTIACircleViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED1445071E4450FC001D19AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED14451C1E4450FC001D19AD /* LaunchScreen.storyboard in Resources */,
+				ED1445191E4450FC001D19AD /* Assets.xcassets in Resources */,
+				ED1445171E4450FC001D19AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1445201E4450FC001D19AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED14452B1E4450FC001D19AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED1445051E4450FC001D19AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1445141E4450FC001D19AD /* ViewController.m in Sources */,
+				ED1445451E4482D8001D19AD /* CircleView.m in Sources */,
+				ED1445111E4450FC001D19AD /* AppDelegate.m in Sources */,
+				ED14450E1E4450FC001D19AD /* main.m in Sources */,
+				ED1445421E4451B9001D19AD /* CircleLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED14451E1E4450FC001D19AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1445271E4450FC001D19AD /* AGTIACircleViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1445291E4450FC001D19AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1445321E4450FC001D19AD /* AGTIACircleViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED1445241E4450FC001D19AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED1445081E4450FC001D19AD /* AGTIACircleView */;
+			targetProxy = ED1445231E4450FC001D19AD /* PBXContainerItemProxy */;
+		};
+		ED14452F1E4450FC001D19AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED1445081E4450FC001D19AD /* AGTIACircleView */;
+			targetProxy = ED14452E1E4450FC001D19AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED1445151E4450FC001D19AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED1445161E4450FC001D19AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED14451A1E4450FC001D19AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED14451B1E4450FC001D19AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED1445341E4450FC001D19AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ED1445351E4450FC001D19AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED1445371E4450FC001D19AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AGTIACircleView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-fernando.AGTIACircleView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED1445381E4450FC001D19AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AGTIACircleView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-fernando.AGTIACircleView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ED14453A1E4450FC001D19AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AGTIACircleViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-fernando.AGTIACircleViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AGTIACircleView.app/AGTIACircleView";
+			};
+			name = Debug;
+		};
+		ED14453B1E4450FC001D19AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AGTIACircleViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-fernando.AGTIACircleViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AGTIACircleView.app/AGTIACircleView";
+			};
+			name = Release;
+		};
+		ED14453D1E4450FC001D19AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AGTIACircleViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-fernando.AGTIACircleViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AGTIACircleView;
+			};
+			name = Debug;
+		};
+		ED14453E1E4450FC001D19AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AGTIACircleViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-fernando.AGTIACircleViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AGTIACircleView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED1445041E4450FC001D19AD /* Build configuration list for PBXProject "AGTIACircleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED1445341E4450FC001D19AD /* Debug */,
+				ED1445351E4450FC001D19AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED1445361E4450FC001D19AD /* Build configuration list for PBXNativeTarget "AGTIACircleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED1445371E4450FC001D19AD /* Debug */,
+				ED1445381E4450FC001D19AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED1445391E4450FC001D19AD /* Build configuration list for PBXNativeTarget "AGTIACircleViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED14453A1E4450FC001D19AD /* Debug */,
+				ED14453B1E4450FC001D19AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED14453C1E4450FC001D19AD /* Build configuration list for PBXNativeTarget "AGTIACircleViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED14453D1E4450FC001D19AD /* Debug */,
+				ED14453E1E4450FC001D19AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED1445011E4450FC001D19AD /* Project object */;
+}
