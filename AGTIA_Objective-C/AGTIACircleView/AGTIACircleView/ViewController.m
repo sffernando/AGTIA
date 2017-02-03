@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 @property (nonatomic, strong) CircleView *cv;
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
 
 @end
 
@@ -32,7 +33,7 @@
 }
 
 -(void)valuechanged:(UISlider *)sender{
-    
+    self.valueLabel.text = [NSString stringWithFormat:@"current progress: %f", sender.value];
     self.cv.circleLayer.progress = sender.value;
 }
 
