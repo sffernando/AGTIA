@@ -14,6 +14,8 @@
 		ED72E2531E44C452009A6047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED72E2511E44C452009A6047 /* LaunchScreen.storyboard */; };
 		ED72E25E1E44C452009A6047 /* AnimatedCircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED72E25D1E44C452009A6047 /* AnimatedCircleTests.swift */; };
 		ED72E2691E44C453009A6047 /* AnimatedCircleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED72E2681E44C453009A6047 /* AnimatedCircleUITests.swift */; };
+		ED72E2781E44C4EC009A6047 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED72E2771E44C4EC009A6047 /* CircleView.swift */; };
+		ED72E27A1E44C507009A6047 /* CircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED72E2791E44C507009A6047 /* CircleLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		ED72E2641E44C452009A6047 /* AnimatedCircleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedCircleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED72E2681E44C453009A6047 /* AnimatedCircleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCircleUITests.swift; sourceTree = "<group>"; };
 		ED72E26A1E44C453009A6047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED72E2771E44C4EC009A6047 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		ED72E2791E44C507009A6047 /* CircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		ED72E2471E44C452009A6047 /* AnimatedCircle */ = {
 			isa = PBXGroup;
 			children = (
+				ED72E2761E44C4D3009A6047 /* CircleView */,
 				ED72E2481E44C452009A6047 /* AppDelegate.swift */,
 				ED72E24A1E44C452009A6047 /* ViewController.swift */,
 				ED72E24C1E44C452009A6047 /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				ED72E26A1E44C453009A6047 /* Info.plist */,
 			);
 			path = AnimatedCircleUITests;
+			sourceTree = "<group>";
+		};
+		ED72E2761E44C4D3009A6047 /* CircleView */ = {
+			isa = PBXGroup;
+			children = (
+				ED72E2771E44C4EC009A6047 /* CircleView.swift */,
+				ED72E2791E44C507009A6047 /* CircleLayer.swift */,
+			);
+			path = CircleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED72E2781E44C4EC009A6047 /* CircleView.swift in Sources */,
 				ED72E24B1E44C452009A6047 /* ViewController.swift in Sources */,
 				ED72E2491E44C452009A6047 /* AppDelegate.swift in Sources */,
+				ED72E27A1E44C507009A6047 /* CircleLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +519,7 @@
 				ED72E26F1E44C453009A6047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED72E2701E44C453009A6047 /* Build configuration list for PBXNativeTarget "AnimatedCircleTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +528,7 @@
 				ED72E2721E44C453009A6047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED72E2731E44C453009A6047 /* Build configuration list for PBXNativeTarget "AnimatedCircleUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +537,7 @@
 				ED72E2751E44C453009A6047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
