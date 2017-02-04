@@ -12,10 +12,7 @@
 
 - (instancetype)initWithTitles:(NSArray<NSString *> *)titles;
 
-- (instancetype)initWithTitles:(NSArray<NSString *> *)titles
-                  buttonHeight:(CGFloat)buttonHeight
-                     menuColor:(UIColor *)menuColor
-                 backBlurStyle:(UIBlurEffectStyle)blurStyle;
+-(id)initWithTitles:(NSArray *)titles withButtonHeight:(CGFloat)height withMenuColor:(UIColor *)menuColor withBackBlurStyle:(UIBlurEffectStyle)style;
 
 - (void)trigger;
 
