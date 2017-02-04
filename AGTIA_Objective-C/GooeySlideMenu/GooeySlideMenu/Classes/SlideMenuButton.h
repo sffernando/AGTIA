@@ -10,4 +10,25 @@
 
 @interface SlideMenuButton : UIView
 
+
+/**
+ convenient init method
+
+ @param title title
+ @return instancetype
+ */
+- (instancetype)initWithTitle:(NSString *)title;
+
+
+/**
+ button color
+ */
+@property (nonatomic, strong) UIColor *buttonColor;
+
+
+/**
+ button clicked block
+ */
+@property (nonatomic, copy) void(^buttonClickedBlock)();
+
 @end
