@@ -12,7 +12,14 @@
 #define buttonSpace 30
 #define menuBlankWidth 50
 
-@interface GooeySlideMenu () {
+@interface GooeySlideMenu ()
+
+@property (nonatomic, strong) CADisplayLink *displayLink;
+@property (nonatomic, assign) NSInteger animationCount; // 动画的数量
+@end
+
+@implementation GooeySlideMenu {
+    
     UIVisualEffectView *blurView;
     UIView *helperSideView;
     UIView *helperCenterView;
@@ -23,12 +30,6 @@
     CGFloat menuButtonHeight;
 }
 
-@property (nonatomic, strong) CADisplayLink *displayLink;
-@property (nonatomic, assign) NSInteger animationCount; // 动画的数量
-
-@end
-
-@implementation GooeySlideMenu
 
 - (instancetype)initWithTitles:(NSArray<NSString *> *)titles {
     return [self initWithTitles:titles buttonHeight:40.0f menuColor:[UIColor colorWithRed:0 green:0.722 blue:1 alpha:1] backBlurStyle:UIBlurEffectStyleDark];
@@ -41,13 +42,12 @@
         
         blurView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:blurStyle]];
         blurView.frame = keyWindow.frame;
-        blurView.alpha = 0.0;
+        blurView.alpha = 0.0f;
         
         helperSideView = [[UIView alloc] initWithFrame:CGRectMake(-40, 0, 40, 40)];
         helperSideView.backgroundColor = [UIColor redColor];
         helperSideView.hidden = YES;
         [keyWindow addSubview:helperSideView];
-        
         
         helperCenterView = [[UIView alloc] initWithFrame:CGRectMake(-40, CGRectGetHeight(keyWindow.frame)/2 - 20, 40, 40)];
         helperCenterView.backgroundColor = [UIColor yellowColor];
@@ -78,7 +78,7 @@
                 button.center = CGPointMake(keyWindow.frame.size.width/4, keyWindow.frame.size.height/2 + menuButtonHeight*index_up + buttonSpace*index_up + buttonSpace/2 + menuButtonHeight/2);
             } else {
                 index_down --;
-                button.center = CGPointMake(keyWindow.frame.size.height/4, keyWindow.frame.size.height/2 - menuButtonHeight*index_down - buttonSpace*index_down - buttonSpace/2 - menuButtonHeight/2);
+                button.center = CGPointMake(keyWindow.frame.size.width/4, keyWindow.frame.size.height/2 - menuButtonHeight*index_down - buttonSpace*index_down - buttonSpace/2 - menuButtonHeight/2);
             }
             
             button.bounds = CGRectMake(0, 0, keyWindow.frame.size.width/2 - 20 * 2, menuButtonHeight);
@@ -178,7 +178,7 @@
     
     [self beforeAnimation];
     
-    [UIView animateWithDuration:0.7 delay:0.0 usingSpringWithDamping:0.6f initialSpringVelocity:0.9f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
+    [UIView animateWithDuration:0.7 delay:0.0f usingSpringWithDamping:0.6f initialSpringVelocity:0.9f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
         helperSideView.center = CGPointMake(-helperSideView.frame.size.height/2, helperSideView.frame.size.height/2);
     } completion:^(BOOL finished) {
         [self finishAnimation];
@@ -190,7 +190,7 @@
     [self beforeAnimation];
 
     [UIView animateWithDuration:0.7 delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:2.0 options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionBeginFromCurrentState animations:^{
-        helperCenterView.center = CGPointMake(-helperCenterView.frame.size.height/2, CGRectGetHeight(keyWindow.frame)/2);
+        helperCenterView.center = CGPointMake(-helperSideView.frame.size.height/2, CGRectGetHeight(keyWindow.frame)/2);
     } completion:^(BOOL finished) {
         [self finishAnimation];
     }];
