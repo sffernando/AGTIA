@@ -76,7 +76,7 @@ class GooeySlideMenu: UIView {
             if let keyWindow = keyWindow {
                 keyWindow.insertSubview(blurView, belowSubview: self)
                 UIView.animate(withDuration: 0.3, animations: { 
-                    self.frame = CGRect(x: 0, y: 0, width: keyWindow.frame.width/2 + self.options.menuBlankWidth, height: keyWindow.frame.size.height)
+                    self.frame = CGRect(x: 0, y: 0, width: keyWindow.frame.size.width/2 + self.options.menuBlankWidth, height: keyWindow.frame.size.height)
                 })
                 
                 beforeAnimation()
@@ -192,7 +192,7 @@ extension GooeySlideMenu {
     
     @objc fileprivate func tapToUntrigger() {
         UIView.animate(withDuration: 0.3) { 
-            self.frame = CGRect(x: -((self.keyWindow?.frame.width)!/2 - self.options.menuBlankWidth), y: 0, width: (self.keyWindow?.frame.size.width)!/2 + self.options.menuBlankWidth, height: (self.keyWindow?.frame.size.height)!)
+            self.frame = CGRect(x: -((self.keyWindow?.frame.size.width)!/2 + self.options.menuBlankWidth), y: 0, width: (self.keyWindow?.frame.size.width)!/2 + self.options.menuBlankWidth, height: (self.keyWindow?.frame.size.height)!)
         }
         beforeAnimation()
         
