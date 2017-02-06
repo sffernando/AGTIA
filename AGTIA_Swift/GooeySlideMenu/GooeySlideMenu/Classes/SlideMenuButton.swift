@@ -47,4 +47,17 @@ class SlideMenuButton: UIView {
         let r = CGRect(x: rect.origin.x, y: rect.origin.y + (rect.size.height - size.height)/2.0, width: rect.size.width, height: size.height)
         option.title.draw(with: r, options: .usesLineFragmentOrigin, attributes: attr, context: nil)
     }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch = touches.first
+        if let touch = touch {
+            let tapCount = touch.tapCount
+            switch tapCount {
+            case 1:
+                option.buttonClickBlock()
+            default:
+                break
+            }
+        }
+    }
 }
