@@ -81,7 +81,7 @@ class GooeySlideMenu: UIView {
                 
                 beforeAnimation()
                 
-                UIView.animate(withDuration: 0.7, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.9, options: [.beginFromCurrentState, .allowUserInteraction], animations: { 
+                UIView.animate(withDuration: 0.7, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.9, options: [.beginFromCurrentState, .allowUserInteraction], animations: {
                     self.helperSideView.center = CGPoint(x: keyWindow.center.x, y: self.helperSideView.frame.size.height/2)
                 }, completion: { (finish) in
                     self.finishAnimation()
@@ -92,14 +92,16 @@ class GooeySlideMenu: UIView {
                 })
                 
                 beforeAnimation()
-                UIView.animateKeyframes(withDuration: 0.7, delay: 0.0, options: [.beginFromCurrentState, .allowUserInteraction], animations: { 
+                
+                UIView.animate(withDuration: 0.7, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 2.0, options: [.beginFromCurrentState, .allowUserInteraction], animations: { 
                     self.helperCenterView.center = keyWindow.center
                 }, completion: { (finish) in
                     if finish {
-                        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleDisplayLinkAction(displaylink:)))
+                        let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapToUntrigger))
                         self.blurView.addGestureRecognizer(tap)
                         self.finishAnimation()
                     }
+
                 })
                 
                 animateButtons()
@@ -187,19 +189,61 @@ extension GooeySlideMenu {
     }
     
     @objc fileprivate func tapToUntrigger() {
+        UIView.animate(withDuration: 0.3) { 
+            self.frame = CGRect(x: -((self.keyWindow?.frame.size.width)!/2 - self.options.menuBlankWidth), y: 0, width: (self.keyWindow?.frame.size.width)!/2 + self.options.menuBlankWidth, height: (self.keyWindow?.frame.size.height)!)
+        }
+        beforeAnimation()
         
+        UIView.animate(withDuration: 0.7, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.9, options: [.beginFromCurrentState, .allowUserInteraction], animations: {
+            self.helperSideView.center = CGPoint(x:-self.helperSideView.frame.width/2, y: self.helperSideView.frame.size.height/2)
+        }, completion: { (finish) in
+            self.finishAnimation()
+        })
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.blurView.alpha = 0.0
+        })
+        
+        beforeAnimation()
+        
+        UIView.animate(withDuration: 0.7, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 2.0, options: [.beginFromCurrentState, .allowUserInteraction], animations: {
+            self.helperCenterView.center = CGPoint(x: -self.helperCenterView.frame.height/2, y: self.frame.size.height/2)
+        }, completion: { (finish) in
+            if finish {
+                self.finishAnimation()
+            }
+            
+        })
+        triggered = false
     }
     
     fileprivate func beforeAnimation() {
-        
+        if displayLink == nil {
+            displayLink = CADisplayLink(target: self, selector: #selector(handleDisplayLinkAction(displaylink:)))
+            displayLink?.add(to: RunLoop.main, forMode: .defaultRunLoopMode)
+        }
+        animationCount += 1
     }
     
     fileprivate func finishAnimation() {
-        
+        animationCount -= 1
+        if animationCount == 0 {
+            displayLink?.invalidate()
+            displayLink = nil
+        }
     }
     
     @objc fileprivate func handleDisplayLinkAction(displaylink: CADisplayLink) {
+
+        let sideHLayer = helperSideView.layer.presentation()
+        let centerHLayer = helperCenterView.layer.presentation()
         
+        let cr = (centerHLayer?.value(forKeyPath: "frame") as AnyObject).cgRectValue
+        let sr = (sideHLayer?.value(forKeyPath: "frame") as AnyObject).cgRectValue
+        
+        diff = (sr?.origin.x)! - (cr?.origin.x)!
+        
+        setNeedsDisplay()
     }
     
 
