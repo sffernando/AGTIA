@@ -76,7 +76,7 @@ class GooeySlideMenu: UIView {
             if let keyWindow = keyWindow {
                 keyWindow.insertSubview(blurView, belowSubview: self)
                 UIView.animate(withDuration: 0.3, animations: { 
-                    self.frame = CGRect(x: 0, y: 0, width: keyWindow.frame.size.width/2 + self.options.menuBlankWidth, height: keyWindow.frame.size.height)
+                    self.frame = CGRect(x: 0, y: 0, width: keyWindow.frame.width/2 + self.options.menuBlankWidth, height: keyWindow.frame.size.height)
                 })
                 
                 beforeAnimation()
@@ -122,14 +122,16 @@ extension GooeySlideMenu {
             
             helperSideView = UIView(frame: CGRect(x: -40, y: 0, width: 40, height: 40))
             helperSideView.backgroundColor = UIColor.red
-//            helperSideView.isHidden = true
+            helperSideView.isHidden = true
             keyWindow.addSubview(helperSideView)
             
             helperCenterView = UIView(frame: CGRect(x: -40, y: keyWindow.frame.height/2 - 20, width: 40, height: 40))
             helperCenterView.backgroundColor = UIColor.yellow
-//            helperCenterView = true
+            helperCenterView.isHidden = true
             keyWindow.addSubview(helperCenterView)
             
+            frame = CGRect(x: -keyWindow.frame.size.width/2 - options.menuBlankWidth, y: 0, width: keyWindow.frame.size.width/2+options.menuBlankWidth, height: keyWindow.frame.size.height);
+            self.backgroundColor = UIColor.clear;
             backgroundColor = UIColor.clear
             keyWindow.insertSubview(self, belowSubview: helperSideView)
             addButton()
@@ -190,7 +192,7 @@ extension GooeySlideMenu {
     
     @objc fileprivate func tapToUntrigger() {
         UIView.animate(withDuration: 0.3) { 
-            self.frame = CGRect(x: -((self.keyWindow?.frame.size.width)!/2 - self.options.menuBlankWidth), y: 0, width: (self.keyWindow?.frame.size.width)!/2 + self.options.menuBlankWidth, height: (self.keyWindow?.frame.size.height)!)
+            self.frame = CGRect(x: -((self.keyWindow?.frame.width)!/2 - self.options.menuBlankWidth), y: 0, width: (self.keyWindow?.frame.size.width)!/2 + self.options.menuBlankWidth, height: (self.keyWindow?.frame.size.height)!)
         }
         beforeAnimation()
         
