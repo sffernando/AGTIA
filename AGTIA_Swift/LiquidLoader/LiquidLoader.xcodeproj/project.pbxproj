@@ -15,6 +15,7 @@
 		ED1CC9D01E4B551F00DC7032 /* LiquidLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CC9CF1E4B551F00DC7032 /* LiquidLoaderTests.swift */; };
 		ED1CC9DB1E4B551F00DC7032 /* LiquidLoaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CC9DA1E4B551F00DC7032 /* LiquidLoaderUITests.swift */; };
 		ED1CC9E91E4B55FD00DC7032 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CC9E81E4B55FD00DC7032 /* ArrayEx.swift */; };
+		ED1CC9EB1E4B70AD00DC7032 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CC9EA1E4B70AD00DC7032 /* CGPointEx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		ED1CC9DA1E4B551F00DC7032 /* LiquidLoaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidLoaderUITests.swift; sourceTree = "<group>"; };
 		ED1CC9DC1E4B551F00DC7032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED1CC9E81E4B55FD00DC7032 /* ArrayEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayEx.swift; sourceTree = "<group>"; };
+		ED1CC9EA1E4B70AD00DC7032 /* CGPointEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointEx.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				ED1CC9C11E4B551F00DC7032 /* Assets.xcassets */,
 				ED1CC9C31E4B551F00DC7032 /* LaunchScreen.storyboard */,
 				ED1CC9C61E4B551F00DC7032 /* Info.plist */,
+				ED1CC9EA1E4B70AD00DC7032 /* CGPointEx.swift */,
 			);
 			path = LiquidLoader;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				ED1CC9E91E4B55FD00DC7032 /* ArrayEx.swift in Sources */,
 				ED1CC9BD1E4B551F00DC7032 /* ViewController.swift in Sources */,
 				ED1CC9BB1E4B551F00DC7032 /* AppDelegate.swift in Sources */,
+				ED1CC9EB1E4B70AD00DC7032 /* CGPointEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +511,7 @@
 				ED1CC9E11E4B551F00DC7032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED1CC9E21E4B551F00DC7032 /* Build configuration list for PBXNativeTarget "LiquidLoaderTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				ED1CC9E41E4B551F00DC7032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED1CC9E51E4B551F00DC7032 /* Build configuration list for PBXNativeTarget "LiquidLoaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				ED1CC9E71E4B551F00DC7032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
