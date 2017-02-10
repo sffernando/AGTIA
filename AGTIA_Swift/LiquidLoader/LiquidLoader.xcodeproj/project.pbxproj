@@ -17,6 +17,7 @@
 		ED1CC9E91E4B55FD00DC7032 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CC9E81E4B55FD00DC7032 /* ArrayEx.swift */; };
 		ED1CC9EB1E4B70AD00DC7032 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CC9EA1E4B70AD00DC7032 /* CGPointEx.swift */; };
 		ED38474A1E4C059300356B44 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3847491E4C059300356B44 /* CGRectEx.swift */; };
+		ED38474C1E4C260700356B44 /* UIView+Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED38474B1E4C260700356B44 /* UIView+Grow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		ED1CC9E81E4B55FD00DC7032 /* ArrayEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayEx.swift; sourceTree = "<group>"; };
 		ED1CC9EA1E4B70AD00DC7032 /* CGPointEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointEx.swift; sourceTree = "<group>"; };
 		ED3847491E4C059300356B44 /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
+		ED38474B1E4C260700356B44 /* UIView+Grow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Grow.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				ED1CC9C61E4B551F00DC7032 /* Info.plist */,
 				ED1CC9EA1E4B70AD00DC7032 /* CGPointEx.swift */,
 				ED3847491E4C059300356B44 /* CGRectEx.swift */,
+				ED38474B1E4C260700356B44 /* UIView+Grow.swift */,
 			);
 			path = LiquidLoader;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				ED1CC9E91E4B55FD00DC7032 /* ArrayEx.swift in Sources */,
 				ED38474A1E4C059300356B44 /* CGRectEx.swift in Sources */,
 				ED1CC9BD1E4B551F00DC7032 /* ViewController.swift in Sources */,
+				ED38474C1E4C260700356B44 /* UIView+Grow.swift in Sources */,
 				ED1CC9BB1E4B551F00DC7032 /* AppDelegate.swift in Sources */,
 				ED1CC9EB1E4B70AD00DC7032 /* CGPointEx.swift in Sources */,
 			);
