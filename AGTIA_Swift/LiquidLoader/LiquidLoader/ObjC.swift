@@ -19,7 +19,7 @@ import UIKit
 extension LiquidLoader {
     @objc public convenience init(frame: CGRect, effect: ObjCEffect, color: UIColor, numberOfCircle: Int, duration: CGFloat, growColor: UIColor? = UIColor.red) {
 //        var s = Effect
-        
+        self.init()
     }
 }
 
