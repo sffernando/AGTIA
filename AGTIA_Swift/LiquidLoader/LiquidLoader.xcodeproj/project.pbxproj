@@ -18,6 +18,8 @@
 		ED1CC9EB1E4B70AD00DC7032 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CC9EA1E4B70AD00DC7032 /* CGPointEx.swift */; };
 		ED38474A1E4C059300356B44 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3847491E4C059300356B44 /* CGRectEx.swift */; };
 		ED38474C1E4C260700356B44 /* UIView+Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED38474B1E4C260700356B44 /* UIView+Grow.swift */; };
+		ED53E8631E4F47E0000411FB /* ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED53E8621E4F47E0000411FB /* ObjC.swift */; };
+		ED53E8651E4F49DB000411FB /* LiquidLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED53E8641E4F49DB000411FB /* LiquidLoader.swift */; };
 		EDA9007C1E4D491000C3DF99 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA9007B1E4D491000C3DF99 /* LiquidUtil.swift */; };
 		EDA9007E1E4D4C1A00C3DF99 /* CircularGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA9007D1E4D4C1A00C3DF99 /* CircularGradientLayer.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		ED1CC9EA1E4B70AD00DC7032 /* CGPointEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointEx.swift; sourceTree = "<group>"; };
 		ED3847491E4C059300356B44 /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
 		ED38474B1E4C260700356B44 /* UIView+Grow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Grow.swift"; sourceTree = "<group>"; };
+		ED53E8621E4F47E0000411FB /* ObjC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjC.swift; sourceTree = "<group>"; };
+		ED53E8641E4F49DB000411FB /* LiquidLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidLoader.swift; sourceTree = "<group>"; };
 		EDA9007B1E4D491000C3DF99 /* LiquidUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidUtil.swift; sourceTree = "<group>"; };
 		EDA9007D1E4D4C1A00C3DF99 /* CircularGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularGradientLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +125,8 @@
 				ED38474B1E4C260700356B44 /* UIView+Grow.swift */,
 				EDA9007B1E4D491000C3DF99 /* LiquidUtil.swift */,
 				EDA9007D1E4D4C1A00C3DF99 /* CircularGradientLayer.swift */,
+				ED53E8621E4F47E0000411FB /* ObjC.swift */,
+				ED53E8641E4F49DB000411FB /* LiquidLoader.swift */,
 			);
 			path = LiquidLoader;
 			sourceTree = "<group>";
@@ -277,12 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED53E8651E4F49DB000411FB /* LiquidLoader.swift in Sources */,
 				ED1CC9E91E4B55FD00DC7032 /* ArrayEx.swift in Sources */,
 				ED38474A1E4C059300356B44 /* CGRectEx.swift in Sources */,
 				ED1CC9BD1E4B551F00DC7032 /* ViewController.swift in Sources */,
 				EDA9007C1E4D491000C3DF99 /* LiquidUtil.swift in Sources */,
 				ED38474C1E4C260700356B44 /* UIView+Grow.swift in Sources */,
 				ED1CC9BB1E4B551F00DC7032 /* AppDelegate.swift in Sources */,
+				ED53E8631E4F47E0000411FB /* ObjC.swift in Sources */,
 				EDA9007E1E4D4C1A00C3DF99 /* CircularGradientLayer.swift in Sources */,
 				ED1CC9EB1E4B70AD00DC7032 /* CGPointEx.swift in Sources */,
 			);
