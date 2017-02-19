@@ -20,6 +20,9 @@
 		ED38474C1E4C260700356B44 /* UIView+Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED38474B1E4C260700356B44 /* UIView+Grow.swift */; };
 		ED53E8631E4F47E0000411FB /* ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED53E8621E4F47E0000411FB /* ObjC.swift */; };
 		ED53E8651E4F49DB000411FB /* LiquidLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED53E8641E4F49DB000411FB /* LiquidLoader.swift */; };
+		ED78CC0B1E59CE5400CBC78E /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78CC0A1E59CE5400CBC78E /* SimpleCircleLiquidEngine.swift */; };
+		ED78CC0D1E59CEDA00CBC78E /* LiquidLoadEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78CC0C1E59CEDA00CBC78E /* LiquidLoadEffect.swift */; };
+		ED78CC0F1E59CF2000CBC78E /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78CC0E1E59CF2000CBC78E /* LiquittableCircle.swift */; };
 		EDA9007C1E4D491000C3DF99 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA9007B1E4D491000C3DF99 /* LiquidUtil.swift */; };
 		EDA9007E1E4D4C1A00C3DF99 /* CircularGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA9007D1E4D4C1A00C3DF99 /* CircularGradientLayer.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,9 @@
 		ED38474B1E4C260700356B44 /* UIView+Grow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Grow.swift"; sourceTree = "<group>"; };
 		ED53E8621E4F47E0000411FB /* ObjC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjC.swift; sourceTree = "<group>"; };
 		ED53E8641E4F49DB000411FB /* LiquidLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidLoader.swift; sourceTree = "<group>"; };
+		ED78CC0A1E59CE5400CBC78E /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
+		ED78CC0C1E59CEDA00CBC78E /* LiquidLoadEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidLoadEffect.swift; sourceTree = "<group>"; };
+		ED78CC0E1E59CF2000CBC78E /* LiquittableCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquittableCircle.swift; sourceTree = "<group>"; };
 		EDA9007B1E4D491000C3DF99 /* LiquidUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidUtil.swift; sourceTree = "<group>"; };
 		EDA9007D1E4D4C1A00C3DF99 /* CircularGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularGradientLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +133,9 @@
 				EDA9007D1E4D4C1A00C3DF99 /* CircularGradientLayer.swift */,
 				ED53E8621E4F47E0000411FB /* ObjC.swift */,
 				ED53E8641E4F49DB000411FB /* LiquidLoader.swift */,
+				ED78CC0A1E59CE5400CBC78E /* SimpleCircleLiquidEngine.swift */,
+				ED78CC0C1E59CEDA00CBC78E /* LiquidLoadEffect.swift */,
+				ED78CC0E1E59CF2000CBC78E /* LiquittableCircle.swift */,
 			);
 			path = LiquidLoader;
 			sourceTree = "<group>";
@@ -285,14 +294,17 @@
 			files = (
 				ED53E8651E4F49DB000411FB /* LiquidLoader.swift in Sources */,
 				ED1CC9E91E4B55FD00DC7032 /* ArrayEx.swift in Sources */,
+				ED78CC0D1E59CEDA00CBC78E /* LiquidLoadEffect.swift in Sources */,
 				ED38474A1E4C059300356B44 /* CGRectEx.swift in Sources */,
 				ED1CC9BD1E4B551F00DC7032 /* ViewController.swift in Sources */,
 				EDA9007C1E4D491000C3DF99 /* LiquidUtil.swift in Sources */,
 				ED38474C1E4C260700356B44 /* UIView+Grow.swift in Sources */,
 				ED1CC9BB1E4B551F00DC7032 /* AppDelegate.swift in Sources */,
+				ED78CC0F1E59CF2000CBC78E /* LiquittableCircle.swift in Sources */,
 				ED53E8631E4F47E0000411FB /* ObjC.swift in Sources */,
 				EDA9007E1E4D4C1A00C3DF99 /* CircularGradientLayer.swift in Sources */,
 				ED1CC9EB1E4B70AD00DC7032 /* CGPointEx.swift in Sources */,
+				ED78CC0B1E59CE5400CBC78E /* SimpleCircleLiquidEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
