@@ -57,24 +57,6 @@ class LiquidLoadEffect: NSObject {
     func resize() {
         // abstract
     }
-//
-//    func setup() {
-//        willSetup()
-//        
-//        engine?.color = color
-//        
-//        self.circles = setupShape()
-//        for circle in circles {
-//            loader?.addSubview(circle)
-//        }
-//        if moveCircle != nil {
-//            loader?.addSubview(moveCircle!)
-//        }
-//        resize()
-//        
-//        timer = CADisplayLink(target: self, selector: #selector(LiquidLoadEffect.update))
-//        timer?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
-//    }
     
     func setup() {
         willSetup()
@@ -92,31 +74,6 @@ class LiquidLoadEffect: NSObject {
         timer = CADisplayLink(target: self, selector: #selector(LiquidLoadEffect.update))
         timer?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
     }
-    
-    
-//    func updateKeyframe(_ key: CGFloat) {
-//        self.engine?.clear()
-//        let movePos = movePosition(key)
-//        
-//        // move subviews positions
-//        moveCircle?.center = movePos
-//        shadowCircle?.center = movePos
-//        circles.each { circle in
-//            if self.moveCircle != nil {
-//                self.engine?.push(self.moveCircle!, other: circle)
-//            }
-//        }
-//        
-//        resize()
-//        
-//        // draw and show grow
-//        if let parent = loader {
-//            self.engine?.draw(parent)
-//        }
-//        if let shadow = shadowCircle {
-//            loader?.bringSubview(toFront: shadow)
-//        }
-//    }
     
     func updateKeyframe(_ key: CGFloat) {
         self.engine?.clear()
@@ -136,21 +93,6 @@ class LiquidLoadEffect: NSObject {
             loader.bringSubview(toFront: shadow)
         }
     }
-    
-    
-//    func grow(_ isGrow: Bool) {
-//        if isGrow {
-//            shadowCircle = LiquittableCircle(center: self.moveCircle!.center, radius: self.moveCircle!.radius * 1.0, color: self.color, growColor: growColor)
-//            shadowCircle?.isGrow = isGrow
-//            loader?.addSubview(shadowCircle!)
-//        } else {
-//            shadowCircle?.removeFromSuperview()
-//        }
-//    }
-//    
-//    func stopTimer() {
-//        timer?.invalidate()
-//    }
     
     func grow(_ isGrow: Bool) {
         if isGrow {
