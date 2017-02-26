@@ -89,6 +89,10 @@ class LiquidLoadEffect: NSObject {
         
         resize()
         
+        if let parent = loader {
+            self.engine?.draw(parent)
+        }
+        
         if let shadow = shadowCircle {
             loader.bringSubview(toFront: shadow)
         }
