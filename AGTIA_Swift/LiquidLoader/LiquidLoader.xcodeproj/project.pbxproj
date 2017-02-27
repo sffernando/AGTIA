@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED056EAC1E6406320045481C /* LiquidLineEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED056EAB1E6406320045481C /* LiquidLineEffect.swift */; };
 		ED1CC9BB1E4B551F00DC7032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CC9BA1E4B551F00DC7032 /* AppDelegate.swift */; };
 		ED1CC9BD1E4B551F00DC7032 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CC9BC1E4B551F00DC7032 /* ViewController.swift */; };
 		ED1CC9C01E4B551F00DC7032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1CC9BE1E4B551F00DC7032 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED056EAB1E6406320045481C /* LiquidLineEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidLineEffect.swift; sourceTree = "<group>"; };
 		ED1CC9B71E4B551F00DC7032 /* LiquidLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1CC9BA1E4B551F00DC7032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED1CC9BC1E4B551F00DC7032 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				ED78CC0A1E59CE5400CBC78E /* SimpleCircleLiquidEngine.swift */,
 				ED78CC0C1E59CEDA00CBC78E /* LiquidLoadEffect.swift */,
 				ED78CC0E1E59CF2000CBC78E /* LiquittableCircle.swift */,
+				ED056EAB1E6406320045481C /* LiquidLineEffect.swift */,
 			);
 			path = LiquidLoader;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED056EAC1E6406320045481C /* LiquidLineEffect.swift in Sources */,
 				ED53E8651E4F49DB000411FB /* LiquidLoader.swift in Sources */,
 				ED1CC9E91E4B55FD00DC7032 /* ArrayEx.swift in Sources */,
 				ED78CC0D1E59CEDA00CBC78E /* LiquidLoadEffect.swift in Sources */,
